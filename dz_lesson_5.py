@@ -7,9 +7,8 @@
 #############################
 
 # number = 5102801160000
-# new_number = str(number)
-# my_symbol = "0"
-# print(len(new_number) - len(new_number.rstrip(my_symbol)))
+# new_number = len(str(number)) - len(str(number).strip('0'))
+# print(new_number)
 
 ##########################
 
@@ -23,26 +22,72 @@
 # print("sum=", sum_num)
 
 ##########################
-# ??????????? 4
+
 # my_str = "Kate likes cats or dogs?"
 # l_limit = "e"
 # r_limit = "o"
-
+# res_str = my_str[my_str.find(l_limit) + 1: my_str.rfind(r_limit)]
+# print(res_str)
 
 ##################
 
-# my_list = ["Apple", "auto", "Street", "Book", "Abricos", "Basketball"]
-# my_list_1 = []
+# my_list = ["Apple", "auto", "Book", "Abricos", "Basketball"]
+# new_list = []
 # for words in my_list:
 #     if words.upper().startswith("A"):
-#         my_list_1.append(words)
-# print(my_list_1)
+#         new_list.append(words)
+# print(new_list)
 
 ##################
 
-my_list = ["Apple", "auto", "Street", "Book", "Abricos", "Basketball"]
-my_list_1 = []
-for words in my_list:
-    if words.upper():
-            my_list_1.append(words)
-print(my_list_1)
+# my_list = ["apple", "auto", "book", "abricos", "basket"]
+# new_list = []
+# for words in my_list:
+#     if "a" in words:
+#         new_list.append(words)
+# print(new_list)
+
+##########################
+
+# my_list = [1, 2, 3, "11", "22", 33]
+# new_list = []
+# for text in my_list:
+#     if type(text) == str:
+#         new_list.append(text)
+# print(new_list)
+
+#########################
+
+# my_str = "ssssadfgfwasd32ynlop"
+# new_str = []
+# for symbol in set(my_str):
+#     if my_str.count(symbol) == 1:
+#         new_str.append(symbol)
+# print(new_str)
+
+####################
+
+# my_str_1 = "asdwqfasdtht"
+# my_str_2 = "obngiadwtnvr"
+# res_list = list(set(my_str_1).intersection(set(my_str_2)))
+# print(res_list)
+
+########################
+
+# my_str_1 = "aaaasdf1"
+# my_str_2 = "asdfff2"
+# new_str = []
+# for symbol in set(my_str_1).intersection(set(my_str_2)):
+#     if my_str_1.count(symbol) == 1 and my_str_2.count(symbol) == 1:
+#         new_str.append(symbol)
+# print(new_str)
+
+##################
+
+# my_str = "asdwqfesasdqwtgf"
+# if len(my_str) % 2:
+#     my_str += "_"
+# res_list = []
+# for index in range(0, len(my_str), 2):
+#     res_list.append(my_str[index: index + 2])
+# print(res_list)
